@@ -1,0 +1,18 @@
+@mixin color-palette($base-color) {
+    @for $i from 1 to 5 {
+        &:nth-child(#{5 - $i}) {
+            background-color: darken($base-color, $i * 10%);
+        }
+    }
+
+    &:nth-child(5) {
+        background-color: $base-color;
+    }
+
+    @for $i from 1 to 5 {
+        &:nth-child(#{$i + 5}) {
+            background-color: lighten($base-color, $i * 5%);
+        }
+    }
+}
+ 

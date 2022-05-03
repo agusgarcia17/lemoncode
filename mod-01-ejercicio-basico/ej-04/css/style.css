@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,500&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container-04 .blog {
+  font-family: "Libre Bodoni", serif;
+  display: grid;
+  grid-template-columns: 450px;
+  grid-template-rows: 1fr auto;
+  justify-content: center;
+  font-size: 16px;
+}
+.main-container-04 .blog .img img {
+  width: 100%;
+}
+.main-container-04 .blog .text {
+  margin: 0px 16px;
+}
+.main-container-04 .blog .text .foot {
+  text-align: right;
+}
+.main-container-04 .blog .text .link {
+  text-align: center;
+  padding: 8px;
+  background-color: green;
+}
+.main-container-04 .blog .text .link a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .main-container-04 .blog {
+    grid-template-columns: 75%;
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .main-container-04 .blog {
+    grid-template-columns: 90%;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

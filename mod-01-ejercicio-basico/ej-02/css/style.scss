@@ -1,0 +1,38 @@
+@import 'mixins' ;
+@import 'variables'; 
+ 
+body{
+    padding: 0;
+    margin: 0;
+} 
+.main-container-02{ 
+ .themes{
+     display: flex;
+     justify-content: space-around;
+
+     .theme {
+        margin: 24px;
+        &.theme-01{
+            @include styling($background-color, $primary-family, $secondary-family,  $border-radius, $box-shadow); 
+        }
+        &.theme-02{
+            @include styling($background-color-02, $primary-family-02, $secondary-family-02,  $border-radius-02, $box-shadow-02);
+        }
+
+        div{
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            border: solid 1px black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        } 
+     }
+
+     @media(max-width: 767px){ 
+        flex-wrap: wrap; 
+     }
+ }
+}
