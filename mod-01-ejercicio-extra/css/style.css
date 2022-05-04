@@ -26,7 +26,11 @@ header .page-title {
 .page-container nav {
   background-color: #393e06;
 }
-.page-container nav .menu-title {
+.page-container nav .menu-container {
+  position: sticky;
+  top: 0px;
+}
+.page-container nav .menu-container .menu-title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,13 +39,13 @@ header .page-title {
   font-size: 20px;
   padding: 8px;
 }
-@media (max-width: 500px) {
-  .page-container nav .menu-title {
-    font-size: 16px;
+@media (max-width: 768px) {
+  .page-container nav .menu-container .menu-title {
+    display: none;
   }
 }
 .page-container nav .menu-container ul {
-  margin-top: 0px;
+  margin: 0px;
   background-color: #f9fbe3;
   padding-left: 0px;
 }
@@ -51,9 +55,25 @@ header .page-title {
   list-style: none;
   padding: 8px;
 }
-@media (max-width: 500px) {
-  .page-container nav .menu-container {
-    font-size: 12px;
+@media (max-width: 768px) {
+  .page-container nav .menu-container ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #393e06;
+    flex-wrap: wrap;
+  }
+  .page-container nav .menu-container ul li {
+    flex: 1;
+    margin: 16px;
+    background-color: #f9fbe3;
+    text-align: center;
+    padding: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .page-container nav {
+    position: sticky;
+    top: 0px;
   }
 }
 .page-container main {
@@ -83,7 +103,7 @@ header .page-title {
   width: 100px;
   margin: 8px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .page-container main .list .card {
     width: 200px;
     height: 150px;
@@ -93,9 +113,9 @@ header .page-title {
     width: 40%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .page-container {
-    grid-template-columns: 30% auto;
+    grid-template-columns: auto;
   }
 }
 
