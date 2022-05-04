@@ -1,0 +1,107 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+header .toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+header .page-title {
+  background-color: #cddf1b;
+  color: #fff;
+  font-size: 24px;
+  padding: 16px 8px;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 15% auto;
+}
+.page-container nav {
+  background-color: #393e06;
+}
+.page-container nav .menu-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 8px;
+}
+@media (max-width: 500px) {
+  .page-container nav .menu-title {
+    font-size: 16px;
+  }
+}
+.page-container nav .menu-container ul {
+  margin-top: 0px;
+  background-color: #f9fbe3;
+  padding-left: 0px;
+}
+.page-container nav .menu-container ul li {
+  border-bottom: 1px solid #cdcfba;
+  border-right: 1px solid #cdcfba;
+  list-style: none;
+  padding: 8px;
+}
+@media (max-width: 500px) {
+  .page-container nav .menu-container {
+    font-size: 12px;
+  }
+}
+.page-container main {
+  background-color: #f1f1f1;
+}
+.page-container main .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.page-container main .list .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: solid 1px #000;
+  border-radius: 4px;
+  width: 250px;
+  height: 200px;
+  margin: 32px 48px;
+  background-color: #fff;
+  font-size: 18px;
+}
+.page-container main .list .card img {
+  border-radius: 50%;
+  width: 100px;
+  margin: 8px;
+}
+@media (max-width: 767px) {
+  .page-container main .list .card {
+    width: 200px;
+    height: 150px;
+    margin: 16px 24px;
+  }
+  .page-container main .list .card img {
+    width: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .page-container {
+    grid-template-columns: 30% auto;
+  }
+}
+
+footer {
+  padding: 16px 8px;
+  background-color: #f9fbe3;
+}
+
+/*# sourceMappingURL=style.css.map */
